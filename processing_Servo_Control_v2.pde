@@ -34,7 +34,7 @@ void setup() {
 
 ////////////////------------------------------- Find out which port the Arduino is plugged into
 String COMx, COMlist = "";
-
+  JDialog frame = new JDialog();
   try {
     if(debug) printArray(Serial.list());
     int i = Serial.list().length;
